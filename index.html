@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div id="name">NOME: Ronaldo</div>
+
+        <div id="item1">
+            <div id="p1">
+                <label for="">Divisão</label><br>
+                <label for="">Numero:</label>
+                <input type="nunber" id="num1"><br>
+                <label for="">Numero:</label>
+                <input type="nunber" id="num2"><br>
+                <button type="submit" onclick="dividirNumeros()">Dividir</button>
+                <div id="resultadoDividir">resultado:</div>
+            </div>
+            <div id="p2">
+                <form action="">
+                    Calculo de Média<br>
+                    <label for="">Digite sua primeira nota:</label>
+                    <input type="nunber" id="num3"><br>
+                    <label for="">Digite sua segunda nota:</label>
+                    <input type="nunber" id="num4"><br>
+                    <label for="">Digite sua terceira nota:</label>
+                    <input type="nunber" id="num5"><br>
+                    <label for="">Digite sua quarta nota:</label>
+                    <input type="nunber" id="num6"><br>
+                    <input type="button" value="soma" onclick="mediaQuatro()">
+                    </form>
+            </div>
+            <div id="p3">
+                <label for="">Soma</label><br>
+                <label for="">Numero 1:</label>
+                <input type="nunber" id="num7"><br>
+                <label for="">Numero 2:</label>
+                <input type="nunber" id="num8"><br>
+                <label for="">Numero 3:</label>
+                <input type="nunber" id="num9"><br>
+                <button type="submit" onclick=" somarNumeros()">Somar</button>
+            </div>
+        </div>
+
+        <div id="item2">
+            <div id="p4">
+                <label for="">Calculo da área do retângulo</label><br>
+                <label for="">Digite o comprimento</label>
+                <input type="nunber" id="num10"><br>
+                <label for="">Digite a largura:</label>
+                <input type="nunber" id="num11"><br>
+                <button type="submit" onclick="areaNumeros()">Calcular</button>
+                <div id="resultadoarea">resultado:</div>
+            </div>
+            <div id="p5">
+                <label for="">Calculo de salario</label><br>
+                <label for="">Digite o salario atual</label>
+                <input type="nunber" id="num12"><br>
+                <label for="">Digite o reajuste</label>
+                <input type="nunber" id="porc"><br>
+                <button type="submit" onclick="reajuste()">Calcular</button>
+                <div id="salarioAtual">resultado:</div>
+            </div>
+            <div id="p6">
+                <label for="">Numero maior e menor que 10</label><br>
+                <label for="">Digite um numero:</label><br>
+                <input type="number" id="num17"><br>
+                <button type="submit" onclick="numero()">calcular:</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
